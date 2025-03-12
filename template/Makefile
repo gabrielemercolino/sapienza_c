@@ -9,16 +9,16 @@ BIN = main
 
 all: $(BIN)
 
-$(BIN): temp/main.o temp/lib.o
-	$(CC) $(CFLAGS) -o $@ $^
+$(BIN): main.o lib.o
+	$(CC) $(CFLAGS) -o $@ ./*.o
 
-temp/main.o: src/main.c include/lib.h
+main.o: src/main.c include/lib.h 
 	$(CC) $(CFLAGS) -c $< -o $@
 
-temp/lib.o: src/lib.c include/lib.h
+lib.o: src/lib.c include/lib.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -rf temp/* $(BIN)
+	rm -rf ./*.o $(BIN)
 
 .PHONY: all clean

@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -O3 -std=c23 -Wall -Werror
+CFLAGS = -O3 -std=c23 -Wall -Werror -Iinclude
 
 BIN = main
 

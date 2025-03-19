@@ -1,7 +1,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#include "../include/lib.h"
+#include "lib.h"
 
 int main() {
   uint64_t n = 10;

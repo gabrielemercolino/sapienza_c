@@ -1,0 +1,5 @@
+-O3 
+-std=c23 
+-Wall 
+-Werror
+-Iinclude

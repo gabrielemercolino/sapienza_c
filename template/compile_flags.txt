@@ -1,5 +1,6 @@
--O3 
--std=c23 
--Wall 
+-O3
+-std=c23
+-Wall
+-Wextra
 -Werror
 -Iinclude
